@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  /* background-color:  */
+  margin: 0;
+  box-sizing: border-box;
+}
