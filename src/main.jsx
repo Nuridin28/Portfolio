@@ -7,6 +7,7 @@ import ContactsPage from "./pages/Contacts/ContactsPage.jsx";
 import ExperiencePage from "./pages/Experience/ExperiencePage.jsx";
 import ProjectsPage from "./pages/Projects/ProjectsPage.jsx";
 import { ThemeProvider } from "./Context/ThemeContext";
+import NotFound from "./pages/NotFound/NotFound.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="Contacts" element={<ContactsPage />} />
           <Route path="Experience" element={<ExperiencePage />} />
           <Route path="Projects" element={<ProjectsPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
