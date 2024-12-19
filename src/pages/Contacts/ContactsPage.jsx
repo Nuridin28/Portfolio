@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import Container from "../../components/Container/Container";
 import { ThemeContext } from "../../Context/ThemeContext";
 import { useContext } from "react";
+import Hero from "../../components/Hero/Hero";
 
 export default function ContactsPage() {
   const { theme } = useContext(ThemeContext);
@@ -18,6 +19,7 @@ export default function ContactsPage() {
       <Container>
         <Header />
         <Contacts />
+        <Hero />
       </Container>
     </div>
   );
