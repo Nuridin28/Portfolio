@@ -3,9 +3,12 @@ import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import { Link } from "react-router";
 import ThemeSwitcher from "../../Context/ThemeSwitcher";
+import { ThemeContext } from "../../Context/ThemeContext";
+import { useContext } from "react";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
+  const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,7 +24,13 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="flex justify-between items-center py-8">
+    <div
+      className="flex justify-between items-center py-8 sticky top-0"
+      style={{
+        backgroundColor: theme === "dark" ? "#130125" : "#fff",
+        color: theme === "dark" ? "#fff" : "#130125",
+      }}
+    >
       <ThemeSwitcher />
       <div className="lg:text-[32px] font-bold text-lg">
         <Link to="/">Nuridin Nurman</Link>
