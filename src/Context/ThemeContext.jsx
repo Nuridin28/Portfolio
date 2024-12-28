@@ -5,16 +5,8 @@ export const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     const initialTheme = localStorage.getItem("theme");
-    return initialTheme ? initialTheme : "light";
+    return initialTheme ? initialTheme : "dark";
   });
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => {
-      const newTheme = prevTheme === "light" ? "dark" : "light";
-      localStorage.setItem("theme", newTheme);
-      return newTheme;
-    });
-  };
 
   function getThemeFromLocalStorage() {
     const savedTheme = localStorage.getItem("theme");
@@ -24,7 +16,7 @@ export const ThemeProvider = ({ children }) => {
   }
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
     </ThemeContext.Provider>
   );

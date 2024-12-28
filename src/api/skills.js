@@ -26,9 +26,7 @@ export const skills = [
   {
     name: "Bootstrap",
   },
-  {
-    name: "Material UI",
-  },
+
   {
     name: "Responsive web",
   },
@@ -45,7 +43,7 @@ export const skills = [
     name: "Continuous Learning",
   },
   {
-    name: "Redux",
+    name: "React-Redux",
   },
   {
     name: "TypeScript",

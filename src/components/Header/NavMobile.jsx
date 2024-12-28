@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router";
 import { ThemeContext } from "../../Context/ThemeContext";
+import ThemeSwitcher from "../../Context/ThemeSwitcher";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,6 +78,9 @@ const NavMobile = () => {
           >
             Contacts
           </Link>
+        </li>
+        <li className="flex sm:hidden px-4">
+          <ThemeSwitcher />
         </li>
       </ul>
     </div>

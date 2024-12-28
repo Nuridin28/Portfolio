@@ -2,8 +2,8 @@ import React from "react";
 
 export default function ExperienceItem({ experienceInfo }) {
   return (
-    <li className="flex items-center justify-between mt-12 sm:flex-row flex-col">
-      <div className="md:text-xl text-sm font-bold">
+    <li className="flex items-center justify-between mt-12 sm:flex-row flex-col md:border-0 border border-white rounded-xl px-4 py-2 text-center lg:text-right">
+      <div className="md:text-xl text-sm font-bold ">
         {experienceInfo.period}
       </div>
       <div className="flex flex-col w-2/3 mt-2 sm:mt-0">

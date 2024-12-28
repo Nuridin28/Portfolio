@@ -2,11 +2,11 @@ import React from "react";
 import Skill from "./Skill";
 import { skills } from "../../api/skills";
 import ImageComponent from "../ImageComponent/Image";
-import img from "../../assets/imgMock.png";
+import img from "../../assets/mock.jpg";
 
 export default function About() {
   return (
-    <section className="about lg:flex-row  flex justify-between md:py-40 py-14 items-center flex-col">
+    <section className="about lg:flex-row  flex justify-between md:py-40 py-14 items-center flex-col gap-10">
       <div className="about-img flex justify-center mt-4 sm:block md:mt-0">
         <ImageComponent img={img} />
       </div>

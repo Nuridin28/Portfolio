@@ -31,7 +31,9 @@ export default function Header() {
         color: theme === "dark" ? "#fff" : "#130125",
       }}
     >
-      <ThemeSwitcher />
+      <div className="hidden sm:flex">
+        <ThemeSwitcher />
+      </div>
       <div className="lg:text-[32px] font-bold text-lg">
         <Link to="/">Nuridin Nurman</Link>
       </div>

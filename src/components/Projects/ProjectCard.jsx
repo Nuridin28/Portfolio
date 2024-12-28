@@ -3,7 +3,7 @@ import ButtonSecondary from "../Buttons/ButtonSecondary";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="project-card flex flex-col font-[inter] border-2 border-white px-6 py-4 rounded-3xl shadow-lg shadow-slate-300 mt-10 h-[50vw]">
+    <div className="project-card flex flex-col font-[inter] border-2 border-white px-6 py-4 rounded-3xl shadow-lg shadow-slate-300 mt-10 h-full">
       <div className="project-card__img">
         <img src={project.img} alt="project name" className="" />
       </div>
