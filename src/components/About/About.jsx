@@ -7,9 +7,9 @@ import img from "../../assets/mock.jpg";
 export default function About() {
   return (
     <section className="about lg:flex-row  flex justify-between md:py-40 py-14 items-center flex-col gap-10">
-      <div className="about-img flex justify-center mt-4 sm:block md:mt-0">
+      {/* <div className="about-img flex justify-center mt-4 sm:block md:mt-0">
         <ImageComponent img={img} />
-      </div>
+      </div> */}
       <div className="about-info lg:w-1/2 md:w-full">
         <div className="about-info__title  md:text-6xl text-3xl lg:text-start text-center font-bold mt-4 lg:mt-0">
           About me
